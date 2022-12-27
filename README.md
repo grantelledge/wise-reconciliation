@@ -6,8 +6,8 @@ A simple tool to:
 4. Instructions to address rounding errors via journal entry
 
 ## Procedure for Use
-1. Download the CSV of **fee-separated** transactions for the reconciliation period; add to the folder with name `wise-export.csv`
-2. Remove line items for deposits (automatically generated in QBO because are a transfer from another account)
+1. Download the CSV of **fee-separated** transactions for the reconciliation period
+2. Remove line items for deposits (automatically generated in QBO because are a transfer from another account); add to the folder with name `wise-export.csv`
 3. Remove all columns except:
 - Date (may need to reformat, as Wise CSV uses day-month-year format)
 - Amount

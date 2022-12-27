@@ -38,6 +38,8 @@ for transaction in transactions:
 # compute the journal entry for the rounding error
 discrepancy = round(closing_qbo_balance - opening_qbo_balance - (closing_wise_balance - opening_wise_balance)/conversion_factor - rounded_usd_total, 2)
 
+print('Final QBO balance: ' + str(round(closing_wise_balance/conversion_factor + discrepancy, 2)))
+
 error_tolerance = 0.001
 if discrepancy > error_tolerance:
     print('Due to rounding, you need to add a journal entry to reconcile the accounts.')
